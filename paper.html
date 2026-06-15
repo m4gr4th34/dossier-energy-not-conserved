@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Self-Explaining Edition — DOSSIER NNN (Open Dossier)</title>
-<meta name="description" content="YOUR ONE-LINE DESCRIPTION. The full paper, written to explain itself.">
+<title>Where Does the Energy Go? — Self-Explaining Edition (pre-release working draft)</title>
+<meta name="description" content="Global energy is not conserved in an expanding (FRW) universe, shown three ways. An AI-reproduced established result; pre-release working draft.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,800;1,400;1,600&family=IBM+Plex+Mono:wght@400;600&display=swap');
   :root{
@@ -83,105 +83,174 @@
 .publish-cta a.pc-btn{flex:0 0 auto;font-family:var(--mono);font-size:14px;font-weight:600;text-decoration:none;
   background:var(--teal);color:#fff;padding:12px 20px;white-space:nowrap}
 .publish-cta a.pc-btn:hover{background:#0a615f}
+  /* this dossier's additions */
+  .draftbanner{background:#fdf6e9;border:1.5px solid var(--open);border-left:5px solid var(--open);padding:14px 16px;margin:18px 0;font-size:15px}
+  .draftbanner b{color:var(--open)}
+  .check{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--teal);background:var(--teal-soft);border:1px solid var(--teal);border-radius:10px;padding:1px 7px;white-space:nowrap}
+  .seam{background:#eef6f6;border:1px solid var(--teal);border-left:5px solid var(--teal);padding:14px 16px;margin:18px 0;font-size:15.5px}
+  .seam .tag{font-family:var(--mono);font-size:11px;color:var(--teal);border:1px solid var(--teal);padding:2px 7px;margin-right:8px}
+  .note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--violet);padding:12px 14px;margin:16px 0;font-size:14.5px;color:var(--ink2)}
+  .note b{color:var(--ink)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
-  <div class="eyebrow">An Open Dossier · <b>NNN</b> · self-explaining edition · v1.0</div>
-  <h1>YOUR PLAIN-LANGUAGE TITLE</h1>
-  <div class="byline">YOUR NAME — YOUR AFFILIATION</div>
+  <div class="eyebrow">An Open Dossier · <b>energy-not-conserved</b> · self-explaining edition · PRE-RELEASE WORKING DRAFT</div>
+  <h1>Where Does the Energy Go?</h1>
+  <div class="byline">Global energy is not conserved in an expanding universe — shown three ways · Irfan Ali-Khan, Independent Researcher</div>
   <div class="provenance" role="contentinfo" aria-label="Provenance and verification">
-    <span class="pv-item"><span class="pv-k">Reading</span><span class="pv-v" id="pv-state">live tip</span></span>
-    <a class="pv-item" id="pv-doi" href="#" target="_blank" rel="noopener"><span class="pv-k">Archived DOI</span><span class="pv-v" id="pv-doi-v">loading… ↗</span></a>
-    <a class="pv-item" href="verify.html" target="_blank" rel="noopener"><span class="pv-k">Bitcoin timestamp</span><span class="pv-v">verify proof ↗</span></a>
-    <a class="pv-item" href="https://github.com/YOURUSER/YOURREPO" target="_blank" rel="noopener"><span class="pv-k">Source</span><span class="pv-v">full history ↗</span></a>
+    <span class="pv-item"><span class="pv-k">Reading</span><span class="pv-v" id="pv-state">pre-release working draft</span></span>
+    <a class="pv-item" id="pv-doi" href="#" target="_blank" rel="noopener"><span class="pv-k">Archived DOI</span><span class="pv-v" id="pv-doi-v">none — not released</span></a>
+    <a class="pv-item" href="https://github.com/m4gr4th34/dossier-energy-not-conserved/commits/main" target="_blank" rel="noopener"><span class="pv-k">Build trail</span><span class="pv-v">commits ↗</span></a>
+    <a class="pv-item" href="https://github.com/m4gr4th34/dossier-energy-not-conserved" target="_blank" rel="noopener"><span class="pv-k">Source</span><span class="pv-v">full history ↗</span></a>
   </div>
+
+  <div class="draftbanner">
+    <b>⚠ Pre-release working draft — not a released version.</b> This is a single demonstrated instance of an AI agent <b>reproducing established physics</b>, offered as anecdotal evidence and an artifact for distributed review. It asserts <b>no novel physics</b> and makes <b>no reliability claim</b>. Every physics claim below is labeled <span class="mono">established-reproduced</span>. <b>No version number is asserted</b> — this dossier versions as a lineage: <i>v1 will be the first released milestone, each later version frozen and citable at its own DOI under a shared concept DOI.</i>
+  </div>
+
+  <div class="note">
+    <b>Companion dossier:</b> UAP propulsion (repo: <a href="https://github.com/m4gr4th34/dossier-UAP-propulsion">dossier-UAP-propulsion</a>) — DOI: <b>[TO BE LINKED ON RELEASE]</b>. Distinct research lineages live in separate repos; where they cross-pollinate they cross-cite by DOI, never merged.
+  </div>
+
   <div class="howto">
-    <b>How to read this:</b> the whole paper is on this one page, written to explain itself.
+    <b>How to read this:</b> the whole argument is on this one page, written to explain itself.
     Tap any <button class="term" data-d="Like this! Underlined-dashed words expand in place with a plain-language explanation. Tap again to close. You never leave the page.">underlined term</button>
-    for a plain-language explanation. Tap any <button class="cite" data-c="demo">ref</button> to see what that source actually showed, in two sentences. <span class="mono">No rabbit holes. No prerequisites.</span>
+    for a plain-language explanation, and any <button class="cite" data-c="demo">ref</button> to see what a source actually showed in two sentences. A <span class="check">checkable · #N</span> tag marks a claim that the verification script recomputes — you can run it yourself. <span class="mono">No prerequisites.</span>
   </div>
   <div class="cta">
-    <a class="btn" href="index.html">Explore the result</a>
+    <a class="btn" href="index.html">Interactive edition (unbuilt)</a>
     <a class="btn primary" href="paper.html">Self-explaining edition</a>
-    <a class="btn" href="paper/manuscript.pdf">Read the PDF</a>
-    <a class="btn" href="dossier.html">Audit trail</a>
-    <a class="btn" href="https://github.com/YOURUSER/YOURREPO">Source &amp; issues</a>
+    <a class="btn" href="https://github.com/m4gr4th34/dossier-energy-not-conserved/actions">CI run logs</a>
+    <a class="btn" href="https://github.com/m4gr4th34/dossier-energy-not-conserved">Source &amp; issues</a>
   </div>
 </header>
 
-<!-- ============================================================
-     AUTHOR INSTRUCTIONS (delete this comment when done):
-     1. Write your paper as numbered narrative sections below.
-        Plain language first; math goes in details.deeper blocks.
-     2. Wrap technical terms in:
-        <button class="term" data-d="3-5 sentence plain explanation">term</button>
-     3. Cite with chips:
-        <button class="cite" data-c="KEY">Venue 'YY</button>
-        ...and add KEY to the CITES database in the script below,
-        with who/what/src — what the source showed, in 2 sentences.
-     4. Any OPEN-UNVERIFIED claim gets an .openclaim box, in the text,
-        where the claim is made. Honest labels, always.
-     ============================================================ -->
+<h2><span class="num">01</span>A photon arrives poorer than it left</h2>
 
-<h2><span class="num">01</span>YOUR FIRST SECTION TITLE</h2>
+<p>Light from the early universe reaches us today carrying far less energy than it set out with. A particle of light that left an atom long ago arrives now stretched out, redder, weaker. Multiply that across all the light crossing an expanding cosmos and a natural question forms: <i>where did all that energy go?</i></p>
 
-<p>Your opening narrative. Here is a
-<button class="term" data-d="Replace this with a 3-5 sentence plain-language explanation of the term, written for a smart non-specialist. What is it, why does it matter here, what is the one surprising thing about it?">tappable term</button>
-and here is a claim with a source
-<button class="cite" data-c="ref1">Journal 'YY</button>.
-Write the whole argument this way — every concept explained where it first appears.</p>
+<p>The answer, standard in physics for about a century, is blunt: <b>nowhere — because in an expanding universe there is no global energy that was ever required to be conserved.</b> That sounds like a dodge. It is not. It is a precise statement about when the conservation of energy is even guaranteed, and an
+<button class="term" data-d="A Friedmann–Robertson–Walker (FRW) universe is the standard model of cosmic geometry: space that is uniform and the same in every direction, but whose overall scale grows with time. It is described by a single 'scale factor' a(t) that stretches all distances. The surprising thing: because it looks different from one moment to the next, it has no time-translation symmetry — and that is exactly what breaks energy conservation.">FRW universe</button>
+fails the condition. This dossier shows that one result three independent ways, and lets you run the numbers.</p>
 
-<details class="deeper"><summary>Go deeper: NAME THE TECHNICAL LAYER</summary>
-<div class="body">Equations and formal detail live here, collapsed by default.
-<div class="eq">your_equation = goes / here</div>
-Cite within deeper blocks the same way <button class="cite" data-c="ref2">Journal 'YY</button>.</div>
+<p class="punch">"Energy must be conserved" is not a law of nature everywhere — it is a theorem with a hypothesis, and the expanding universe does not meet the hypothesis.</p>
+
+<h2><span class="num">02</span>Leg 1 — No symmetry, no conserved energy</h2>
+
+<p>In general relativity the local law is exact: the
+<button class="term" data-d="The stress-energy tensor T^{µν} packages the density and flow of energy and momentum at each point of spacetime. In flat space its ordinary divergence vanishing (∂_µT^{µν}=0) is exactly the statement 'energy and momentum are conserved here'.">stress-energy tensor</button>
+obeys
+<button class="term" data-d="In curved spacetime the conservation law becomes ∇_µT^{µν}=0, using the covariant derivative ∇ instead of the ordinary one. The catch: a covariant divergence is not an ordinary divergence. It does NOT integrate up (via the divergence theorem) into a single conserved total energy, because the extra connection terms describe energy traded with the gravitational field itself.">a covariant conservation law</button>,
+∇<sub>µ</sub>T<sup>µν</sup>=0 <button class="cite" data-c="carroll-lng">Carroll LNGR</button>. But that is a <i>local</i> bookkeeping identity, not a global one. To get a genuinely conserved total energy — a single number that never changes — you need the spacetime to have a time-translation symmetry: a
+<button class="term" data-d="A Killing vector is a direction in spacetime along which the geometry doesn't change — a symmetry of the metric. A timelike Killing vector means 'the universe looks the same from one moment to the next' (time-translation symmetry). By Noether's theorem, that symmetry is what hands you a conserved energy. No such symmetry, no conserved energy.">timelike Killing vector</button>
+<button class="cite" data-c="carroll-lng">Carroll LNGR</button>. An expanding FRW universe has none — it is genuinely different at each epoch — so there is no conserved global energy to begin with.</p>
+
+<p>You also cannot rescue the books by claiming the lost energy hides in the gravitational field: in general relativity the energy of the gravitational field <b>cannot be localized</b> at all <button class="cite" data-c="mtw">MTW §20.4</button>. There is simply no global ledger. This is textbook, not fringe <button class="cite" data-c="baez">UCR FAQ</button> <button class="cite" data-c="carroll-blog">Carroll '10</button>. <span class="mono" style="color:var(--ink2)">[established-reproduced — conceptual leg; see refs]</span></p>
+
+<details class="deeper"><summary>Go deeper: why covariant ≠ globally conserved</summary>
+<div class="body">A conserved charge needs an ordinary (partial) divergence that integrates by Gauss's theorem. From a Killing field ξ one builds a current and recovers that:
+<div class="eq">J^a = T^{ab} ξ_b ,   ∇_a J^a = (∇_a T^{ab}) ξ_b + T^{ab} ∇_a ξ_b = 0</div>
+The first term vanishes by ∇_aT^{ab}=0; the second by Killing's equation ∇_(a ξ_b)=0. So ∇_aJ^a=0 becomes an ordinary conservation law — <i>but only because ξ exists</i>. In FRW there is no timelike ξ, so this construction is unavailable. <button class="cite" data-c="wald">Wald (1984)</button></div>
 </details>
 
-<h2><span class="num">02</span>YOUR SECOND SECTION TITLE</h2>
+<p class="punch">Conservation of energy is the shadow of a symmetry. Remove the symmetry and the shadow goes with it.</p>
 
-<p>Continue the narrative. If a claim is published unverified by design, label it honestly where it appears:</p>
+<h2><span class="num">03</span>Leg 2 — The bookkeeping: radiation falls as 1/a</h2>
 
-<div class="openclaim">
-<span class="tag">OPEN-UNVERIFIED</span><b>Honest label:</b> DESCRIBE THE UNVERIFIED CLAIM. State that it is claim <span class="mono">CNN</span> in the public ledger and an open challenge: <b>the first person to confirm or refute it gets named credit in the next version.</b>
+<p>Now watch the energy directly. In an FRW universe the
+<button class="term" data-d="The scale factor a(t) is the single number that measures how big the universe is at time t — distances between far-apart galaxies grow in proportion to a. Densities and energies are quoted as powers of a, e.g. 'falls as a⁻³' means it drops by 8 when a doubles.">scale factor</button>
+a sets how everything dilutes. The continuity equation gives a clean rule: the energy density of any
+<button class="term" data-d="An equation of state relates pressure p to energy density ρ as p = wρ, with w a constant. Dust/matter has w=0 (negligible pressure); radiation has w=1/3. The value of w controls how fast the density dilutes as the universe expands.">smooth fluid</button>
+scales as ρ ∝ a<sup>−3(1+w)</sup> <button class="cite" data-c="carroll-lng">Carroll LNGR 8.23</button>.</p>
+
+<ul>
+<li><b>Matter</b> (w=0): ρ ∝ a<sup>−3</sup> <span class="check">checkable · verify_numbers.py N02</span> — pure dilution, the same stuff spread through a volume that grew as a³.</li>
+<li><b>Radiation</b> (w=1/3): ρ ∝ a<sup>−4</sup> <span class="check">checkable · verify_numbers.py N01</span> — one extra factor of 1/a beyond dilution.</li>
+</ul>
+
+<p>Where does the extra 1/a come from? The number of photons in a box dilutes exactly like matter, as a<sup>−3</sup>; but <i>each individual photon also loses energy as 1/a</i> as it redshifts <button class="cite" data-c="carroll-lng">Carroll LNGR 8.28</button>. So count the total radiation energy inside a fixed <button class="term" data-d="A comoving volume is a region whose boundary is carried along by the cosmic expansion — it contains the same galaxies for all time, while its physical volume grows as a³. Asking what happens to 'the energy in a comoving box' is the honest way to ask whether energy is conserved as the universe expands.">comoving volume</button> (whose physical size grows as a³):</p>
+
+<p style="text-align:center" class="mono">E<sub>rad</sub> = ρ<sub>rad</sub> × V ∝ a<sup>−4</sup> × a<sup>3</sup> = a<sup>−1</sup>.</p>
+
+<p>The total radiation energy in a region that always contains the same photons <b>falls as 1/a</b> <span class="check">checkable · verify_numbers.py N03</span>. As the universe doubles in size, that energy halves. There is no term anywhere in the equations that catches it. It is not transferred; it is not stored; it is simply not conserved. <span class="mono" style="color:var(--ink2)">[established-reproduced]</span></p>
+
+<details class="deeper"><summary>Go deeper: the continuity equation and its solution</summary>
+<div class="body">The ν=0 component of ∇<sub>µ</sub>T<sup>µ</sup><sub>0</sub>=0 in FRW is
+<div class="eq">ρ̇/ρ = −3 (ȧ/a)(1 + w)   ⇒   ρ ∝ a^(−3(1+w))</div>
+For radiation, tracelessness of the electromagnetic stress-energy forces w=1/3, giving ρ∝a⁻⁴; for dust w=0 gives ρ∝a⁻³. The decomposition a⁻⁴ = a⁻³ (number) × a⁻¹ (per-photon redshift) is checked explicitly. <button class="cite" data-c="carroll-lng">Carroll LNGR 8.20–8.28</button> <span class="check">checkable · N05</span></div>
+</details>
+
+<p class="punch">Same photons, same box — and a steadily shrinking pile of energy. The deficit is the result.</p>
+
+<h2><span class="num">04</span>Leg 3 — The concrete face: cosmological redshift</h2>
+
+<p>Leg 2's "each photon loses energy as 1/a" has a face you can put a number on. The oldest light we can see is the <b>cosmic microwave background (CMB)</b> — radiation released when the universe first turned transparent, at
+<button class="term" data-d="Redshift z measures how much a photon's wavelength has stretched since emission: 1+z = a_now/a_then. The CMB's last-scattering redshift is about z*=1089.80, meaning the universe has expanded by a factor of ~1091 since that light was emitted, so each CMB photon's energy is now about 1/1091 of its original value.">redshift z* ≈ 1089.80</button>
+<button class="cite" data-c="planck">Planck '18</button>. A photon's energy scales as E ∝ 1/a, so the energy it has now versus when it left is</p>
+
+<p style="text-align:center" class="mono">E<sub>obs</sub> / E<sub>emit</sub> = 1 / (1 + z*) ≈ 9.17 × 10<sup>−4</sup>.</p>
+
+<p>Each CMB photon arrives with about <b>0.09%</b> of the energy it was born with <span class="check">checkable · verify_numbers.py N04</span>. The other ~99.9% is gone. <span class="mono" style="color:var(--ink2)">[established-reproduced]</span></p>
+
+<div class="seam">
+<span class="tag">HONEST SEAM</span><b>So where did the 99.9% go?</b> Nowhere — and that is the whole point, not a paradox. "Lost energy must reappear somewhere" is a theorem of physics <i>with</i> time-translation symmetry (Leg 1); an expanding universe has none, so there is no global ledger for it to enter. Three honest caveats this worked number leans on, stated rather than waved through: (1) it is the <i>per-photon</i> redshift factor only — the number-dilution of Leg 2 is a separate effect; (2) "energy" here is the photon energy as measured by comoving observers, a frame choice; (3) the value depends on the stated z*. Change any of these and the number changes — which is exactly why it is a <i>checkable</i> claim (N04), not a slogan.
 </div>
 
-<p class="punch">End with the line your readers should carry away.</p>
+<p class="punch">The redshift you can measure tonight is the conservation law failing, in the open, with a number attached.</p>
+
+<h2><span class="num">05</span>What this is — and what it is not</h2>
+
+<p>This dossier's object of study is the <b>process</b>, not the physics. The physics is old and settled; the experiment is whether a public, instrumented, AI-assisted derivation reliably <i>surfaces and corrects its own errors</i>. That proposition is stated here as a <b>hypothesis</b>, not a conclusion.</p>
+
+<p><b>The build, honestly.</b> Verification was wired first: the CI script <span class="mono">verify_numbers.py</span> was made green on a placeholder check <i>before</i> any derivation content, so the trail is contemporaneous. The commit history is granular and was never squashed or rebased — including a caught oversight (two page-title tags missed in the identity pass, fixed in a follow-up commit, still visible in the log). The six numeric checks (N01–N05) passed on first implementation; no numerical error was caught in the derivation itself.</p>
+
+<div class="openclaim">
+<span class="tag">READ WITH SUSPICION</span><b>A clean log is not a victory lap.</b> On a multi-step derivation, an error-free run warrants scrutiny rather than celebration — especially here, where the target is a textbook result the agent has very likely seen before, inflating the prior that the "right" answer was reproduced rather than derived. Treat the absence of caught errors as <b>weak evidence at best</b>, and an invitation to attack the checks and the framing.</div>
+
+<p><b>The evidence is the repository, not this paragraph.</b> The narrative above is a faithful summary; the primary record is the <a href="https://github.com/m4gr4th34/dossier-energy-not-conserved/commits/main">commit history</a> and the <a href="https://github.com/m4gr4th34/dossier-energy-not-conserved/actions">CI run logs</a>. If they disagree with this summary, believe them.</p>
+
+<div class="note">
+<b>Related established work, out of scope here (not claimed):</b> the cosmological constant Λ, quasilocal energy (Brown–York / Wang–Yau), ADM and Bondi–Sachs mass, unimodular energy-diffusion, and brane-bulk energy exchange. Each is a real, established line of work on energy in GR; none is part of this reproduction, and none is needed for the three legs above.
+</div>
+
+<p class="punch">A single honest instance, instrumented in the open: not proof that the method works, but a checkable artifact for deciding whether it does.</p>
 
 <div class="publish-cta">
   <div class="pc-text">
     <p class="pc-h">Want to publish like this?</p>
-    <p class="pc-sub">You just read a paper that explains itself. You can publish one too — Open Dossier is a free template, and an AI agent does the drafting, typesetting, citations, and verification. Idea to live publication in an afternoon.</p>
+    <p class="pc-sub">You just read a paper that explains itself and checks its own numbers. You can publish one too — Open Dossier is a free template, and an AI agent does the drafting, typesetting, citations, and verification.</p>
   </div>
   <a class="pc-btn" href="https://github.com/m4gr4th34/open-dossier-template/blob/main/GETTING-STARTED.md">Publish your own →</a>
 </div>
 
 <footer>
-  <b>About this edition:</b> this page is the complete paper in self-explaining form. The <a href="paper/manuscript.pdf">formal PDF</a> exists for tradition and archives; the <a href="index.html">interactive edition</a> carries the verification console; the <a href="dossier.html">audit trail</a> carries the receipts.
-  <br><br><span class="mono">An Open Dossier · CC BY 4.0 · AI-assistance: DESCRIBE YOUR USE and state your actual review basis · every verification label is true</span>
+  <b>About this edition:</b> this page is the self-explaining edition and the priority surface of a <b>pre-release working draft</b>. The interactive console and audit trail are not yet built; no formal PDF, no release, no DOI, no timestamp.
+  <br><br><span class="mono">An Open Dossier · CC BY 4.0 · AI-assistance: drafted and derived AI-first with verification instrumented from the first commit; human review of this draft is pending (the experiment's point). Every physics claim is established-reproduced; every verification label is true.</span>
 </footer>
 
 </div>
 
 <script>
-// citation database — add an entry per chip:
-// KEY: {who:"Author(s) (Year)", what:"What they showed, 2 sentences, plain language.", src:"Journal Vol, Page"}
+// citation database — what each source actually showed, in two sentences.
 const CITES = {
   demo: {who:"This is a citation chip", what:"Tap any chip like this one and you get the source plus a two-sentence plain-language summary of what it actually showed — instead of a bare [7] sending you down a rabbit hole.", src:"You never leave the page."},
-  ref1: {who:"REPLACE — Author et al. (Year)", what:"REPLACE — what this source demonstrated, in plain language, and why it matters to this paper.", src:"Journal Vol, Page (Year)"},
-  ref2: {who:"REPLACE — Author et al. (Year)", what:"REPLACE.", src:"Journal Vol, Page (Year)"}
+  "carroll-lng": {who:"Carroll, Lecture Notes on General Relativity (1997)", what:"Gives the covariant conservation law ∇_µT^{µν}=0 (eq 4.23), shows conserved quantities require a Killing vector (eq 5.42), and derives the FRW scalings ρ∝a^{−3(1+w)} (8.23) with radiation ρ∝a^{−4} (8.28). This is the textbook source the three legs reproduce.", src:"Secs. 4, 5, 8 (= arXiv:gr-qc/9712019; same chapters as Spacetime and Geometry, 2004)."},
+  wald: {who:"Wald, General Relativity (1984)", what:"Gives the rigorous construction: for a Killing field ξ, the current J^a=T^{ab}ξ_b satisfies ∇_aJ^a=0, yielding a conserved energy — which therefore fails to exist when no timelike Killing vector does, as in FRW.", src:"≈§4.3 + Killing-vector sections — exact location flagged, to confirm against the printed text."},
+  mtw: {who:"Misner, Thorne & Wheeler, Gravitation (1973)", what:"Argues that the energy of the gravitational field cannot be localized, so the energy 'missing' from redshifting light cannot be reassigned to a local gravitational energy density to save global conservation.", src:"§20.4, 'Why the energy of the gravitational field cannot be localized.'"},
+  baez: {who:"Baez & Weiss, UCR Physics FAQ", what:"States plainly that energy is conserved locally but not globally in general relativity, and that FRW spacetimes — being neither static nor asymptotically flat — have no well-defined conserved total energy.", src:"math.ucr.edu — 'Is Energy Conserved in General Relativity?'"},
+  "carroll-blog": {who:"Carroll (2010)", what:"An accessible statement that energy is not conserved in an expanding universe, using the radiation and dark-energy examples, and emphasizing that this is standard physics rather than a controversy.", src:"'Energy Is Not Conserved', preposterousuniverse.com."},
+  planck: {who:"Planck Collaboration (2018)", what:"Provides the last-scattering (recombination) redshift z*≈1089.80 used as the worked example for the CMB photon's redshift energy budget.", src:"A&A 641, A6 (2020) — value flagged, to confirm against the final parameter table."}
 };
-// one shared toggle behavior for terms and citations
 function closeCard(btn){ const c = btn._card; if(c){ c.remove(); btn._card = null; btn.setAttribute('aria-expanded','false'); } }
 function toggle(btn, html, extraClass){
   if(btn._card){ closeCard(btn); return; }
   const card = document.createElement('span');
   card.className = 'popcard' + (extraClass ? ' ' + extraClass : '');
   card.innerHTML = html;
-  // insert after the end of the current paragraph-level parent for clean layout
-  const block = btn.closest('p, .howto, .body, .openclaim') || btn.parentNode;
+  const block = btn.closest('p, .howto, .body, .openclaim, .seam, .note, li') || btn.parentNode;
   block.insertAdjacentElement('afterend', card);
   btn._card = card; btn.setAttribute('aria-expanded','true');
 }
@@ -199,17 +268,19 @@ document.querySelectorAll('.cite').forEach(btn=>{
 });
 </script>
 <script>
+// Provenance bar — honest for a pre-release working draft (no DOI, no release yet).
 fetch('provenance.json').then(r=>r.json()).then(p=>{
   const d=document.getElementById('pv-doi'), v=document.getElementById('pv-doi-v');
   if(!p.version_doi || p.version_doi.indexOf('TODO')===0){
-    v.textContent='DOI after first release';
-    d.href='https://github.com/YOURUSER/YOURREPO';
+    v.textContent='none — not released';
+    d.href='https://github.com/m4gr4th34/dossier-energy-not-conserved';
+    document.getElementById('pv-state').textContent='pre-release working draft';
   } else {
     d.href='https://doi.org/'+p.version_doi; v.textContent=p.version_doi+' ↗';
+    document.getElementById('pv-state').textContent='release '+p.release_tag+' (+ live edits)';
   }
-  document.getElementById('pv-state').textContent='release '+p.release_tag+' (+ live edits)';
-}).catch(()=>{document.getElementById('pv-doi-v').textContent='see repository ↗';
-  document.getElementById('pv-doi').href='https://github.com/YOURUSER/YOURREPO';});
+}).catch(()=>{document.getElementById('pv-doi-v').textContent='none — not released';
+  document.getElementById('pv-doi').href='https://github.com/m4gr4th34/dossier-energy-not-conserved';});
 </script>
 </body>
 </html>
