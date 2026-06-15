@@ -4,6 +4,11 @@
 *Don't trust this paper — run it.*
 Irfan Ali-Khan · Independent Researcher
 
+### 📖 Live preview (work in progress)
+> **This dossier is an active draft — not yet released.** Sections, claims, and checks may be incomplete or unresolved. Shared early so the ideas can be read and discussed as they develop.
+
+▶ **[Read the self-explaining edition](https://m4gr4th34.github.io/dossier-energy-not-conserved/paper.html)** · [Interactive edition](https://m4gr4th34.github.io/dossier-energy-not-conserved/) · [Audit trail](https://m4gr4th34.github.io/dossier-energy-not-conserved/dossier.html)
+
 > **⚠ PRE-RELEASE WORKING DRAFT — not a released version.**
 > This repository is an in-progress draft for human review. **No version number is asserted, no DOI is minted, and no release/timestamp has been run.** The built surface so far is the **self-explaining edition → [`paper.html`](paper.html)**. The other surfaces (interactive console, audit trail, formal PDF) are unbuilt scaffolds.
 
