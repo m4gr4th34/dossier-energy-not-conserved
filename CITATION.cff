@@ -1,18 +1,21 @@
 cff-version: 1.2.0
 message: "If you use or build on this work, please cite it as below."
 type: software
-title: "DOSSIER NNN — YOUR TITLE (Open Dossier format)"
+title: "Global Energy Is Not Conserved in an FRW Universe — an AI-reproduced established result (Open Dossier)"
 authors:
-  - family-names: "YOUR FAMILY NAME"
-    given-names: "YOUR GIVEN NAME"
-    affiliation: "Independent Researcher, CITY, COUNTRY"
-version: "1.0"
-date-released: "YYYY-MM-DD"
+  - family-names: "Ali-Khan"
+    given-names: "Irfan"
+    affiliation: "Independent Researcher"
+# version: no version asserted — PRE-RELEASE WORKING DRAFT.
+#          v1.0 will be the first released milestone (lineage under a shared concept DOI).
+# date-released: not released yet.
 license: "CC-BY-4.0"
-repository-code: "https://github.com/YOURUSER/YOURREPO"
-url: "https://YOURUSER.github.io/YOURREPO/"
+repository-code: "https://github.com/m4gr4th34/dossier-energy-not-conserved"
+url: "https://m4gr4th34.github.io/dossier-energy-not-conserved/"
 # doi: "10.5281/zenodo.XXXXXXX"   # uncomment and fill after first Zenodo release
 keywords:
   - open dossier
   - verified open research
-  - YOUR FIELD
+  - general relativity
+  - cosmology
+  - energy conservation

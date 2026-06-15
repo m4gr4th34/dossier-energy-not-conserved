@@ -87,22 +87,22 @@
 <div class="wrap">
 
 <header>
-  <div class="eyebrow">An Open Dossier · <b>NNN</b> · v1.0 · MONTH YEAR</div>
-  <h1>YOUR TITLE HERE</h1>
-  <div class="byline">YOUR NAME — YOUR AFFILIATION</div>
+  <div class="eyebrow">An Open Dossier · <b>energy-not-conserved</b> · PRE-RELEASE WORKING DRAFT</div>
+  <h1>Global Energy Is Not Conserved in an Expanding (FRW) Universe</h1>
+  <div class="byline">Irfan Ali-Khan — Independent Researcher</div>
   <div class="provenance" role="contentinfo" aria-label="Provenance and verification">
     <span class="pv-item"><span class="pv-k">Reading</span><span class="pv-v" id="pv-state">live tip</span></span>
     <a class="pv-item" id="pv-doi" href="#" target="_blank" rel="noopener"><span class="pv-k">Archived DOI</span><span class="pv-v" id="pv-doi-v">loading… ↗</span></a>
     <a class="pv-item" href="verify.html" target="_blank" rel="noopener"><span class="pv-k">Bitcoin timestamp</span><span class="pv-v">verify proof ↗</span></a>
-    <a class="pv-item" href="https://github.com/YOURUSER/YOURREPO" target="_blank" rel="noopener"><span class="pv-k">Source</span><span class="pv-v">full history ↗</span></a>
+    <a class="pv-item" href="https://github.com/m4gr4th34/dossier-energy-not-conserved" target="_blank" rel="noopener"><span class="pv-k">Source</span><span class="pv-v">full history ↗</span></a>
   </div>
-  <p class="abstract">YOUR ABSTRACT. Replace this with your paper's abstract. End it with: <b>Don't trust this paper — run it.</b></p>
+  <p class="abstract"><b>Pre-release working draft.</b> This interactive edition (verification console + explorer) is <b>not yet built</b>. The built surface is the <a href="paper.html">self-explaining edition</a>, which lays out the argument and its checkable claims. The object of study is the <i>process</i> — an AI agent reproducing an established result with verification instrumented from the first commit. No novel physics; no reliability claim. <b>Don't trust this paper — run it.</b></p>
   <div class="cta">
     <a class="btn primary" href="index.html">Explore the result</a>
     <a class="btn" href="paper.html">Self-explaining edition</a>
     <a class="btn" href="paper/manuscript.pdf">Read the PDF</a>
     <a class="btn" href="dossier.html">Audit trail</a>
-    <a class="btn" href="https://github.com/YOURUSER/YOURREPO">Source &amp; issues</a>
+    <a class="btn" href="https://github.com/m4gr4th34/dossier-energy-not-conserved">Source &amp; issues</a>
   </div>
 </header>
 
@@ -158,7 +158,7 @@
 </div>
 
 <footer>
-  <b>How to review this paper:</b> run the checks above, read the <a href="dossier.html">audit trail</a> (red-team findings published, not hidden), then <a href="https://github.com/YOURUSER/YOURREPO/issues">file an issue against any claim</a>. Every revision is versioned; nothing is memory-holed. Releases archived at CERN with a DOI; hashes anchored in the Bitcoin blockchain automatically on every release.
+  <b>How to review this paper:</b> run the checks above, read the <a href="dossier.html">audit trail</a> (red-team findings published, not hidden), then <a href="https://github.com/m4gr4th34/dossier-energy-not-conserved/issues">file an issue against any claim</a>. Every revision is versioned; nothing is memory-holed. Releases archived at CERN with a DOI; hashes anchored in the Bitcoin blockchain automatically on every release.
   <br><br>
   <span class="mono">Open Dossier format · CC BY 4.0 (paper) / MIT (code) · AI-assistance: DESCRIBE YOUR USE HERE and state your actual review basis.</span>
 </footer>
@@ -213,13 +213,13 @@ fetch('provenance.json').then(r=>r.json()).then(p=>{
   const d=document.getElementById('pv-doi'), v=document.getElementById('pv-doi-v');
   if(!p.version_doi || p.version_doi.indexOf('TODO')===0){
     v.textContent='DOI after first release';
-    d.href='https://github.com/YOURUSER/YOURREPO';
+    d.href='https://github.com/m4gr4th34/dossier-energy-not-conserved';
   } else {
     d.href='https://doi.org/'+p.version_doi; v.textContent=p.version_doi+' ↗';
   }
   document.getElementById('pv-state').textContent='release '+p.release_tag+' (+ live edits)';
 }).catch(()=>{document.getElementById('pv-doi-v').textContent='see repository ↗';
-  document.getElementById('pv-doi').href='https://github.com/YOURUSER/YOURREPO';});
+  document.getElementById('pv-doi').href='https://github.com/m4gr4th34/dossier-energy-not-conserved';});
 </script>
 </body>
 </html>

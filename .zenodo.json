@@ -1,11 +1,11 @@
 {
-  "title": "DOSSIER NNN — YOUR TITLE HERE",
-  "creators": [{"name": "YOUR NAME", "affiliation": "YOUR AFFILIATION"}],
-  "description": "YOUR ABSTRACT HERE. An Open Dossier publication: executable claims under CI, published adversarial review, auto-DOI and auto-timestamped releases.",
+  "title": "Global Energy Is Not Conserved in an FRW Universe — an AI-reproduced established result (Open Dossier)",
+  "creators": [{"name": "Ali-Khan, Irfan", "affiliation": "Independent Researcher"}],
+  "description": "PRE-RELEASE WORKING DRAFT (no version asserted, not released). A verification-instrumented, AI-assisted reproduction of an established general-relativity result: global energy is not conserved in an FRW universe, shown three independent ways. Every physics claim is labeled established-reproduced; no novel physics and no reliability claim are asserted. An Open Dossier publication.",
   "upload_type": "publication",
   "publication_type": "preprint",
   "access_right": "open",
   "license": "cc-by-4.0",
-  "keywords": ["open dossier", "verified open research", "YOUR FIELD"],
+  "keywords": ["open dossier", "verified open research", "general relativity", "cosmology", "energy conservation"],
   "communities": [{"identifier": "open-dossier"}]
 }
