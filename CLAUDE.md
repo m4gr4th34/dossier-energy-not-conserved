@@ -11,8 +11,9 @@ are non-negotiable and apply to every session.
   to match. All three must agree.
 
 ## Verification labels are sacred
-- Every claim's status in claim_ledger.csv must be true. Claims nobody
-  verified are labeled OPEN-UNVERIFIED, never asserted.
+- Every claim's status in claim_ledger.csv must be true; claims nobody —
+  human or machine — has verified are labeled OPEN-UNVERIFIED and posted as
+  open challenges with named credit, never asserted.
 - Manuscript language must match ledger status: unverified claims say
   "is expected to" or "we conjecture", never "yields" or "is".
 - **OPEN-CAVEATED** — a claim that is established, but only under an explicitly
@@ -83,6 +84,11 @@ are non-negotiable and apply to every session.
   non-scientific nature stated, and the mundane candidate (e.g. uncharacterized RF
   interference, or that no instrumented measurement exists to assess it) stated
   alongside with equal prominence.
+- **FORECAST** (a claim TYPE, not a status) — a labeled author estimate
+  (subjective probability/judgment) with stated reasoning and a mandatory dated,
+  falsifiable signpost; it has no executable check, so its verifier IS the
+  signpost. A FORECAST's status stays OPEN-UNVERIFIED until its signpost date
+  resolves it true or refuted.
 
 ## Releases vs commits
 - Plain commits: site edits, typo fixes, doc improvements. Push freely.
