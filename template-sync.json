@@ -1,20 +1,30 @@
 {
-  "synced_from_commit": "8987ffe",
+  "synced_from_commit": "4d80881",
   "synced_at": "2026-06-18",
   "ritual": "three-bucket (machinery / content / structural migrations), shape-first",
   "dossier_shape": "single-result",
-  "this_sync": {
-    "adopted": [
-      "label vocabulary: FORECAST claim type + clarified OPEN-UNVERIFIED wording",
-      "placeholder-honesty CI (verification/check_placeholders.py + .github/workflows/check-placeholders.yml)",
-      "DEPLOY.md release-gate note for the placeholder check",
-      "this changelog file",
-      "structural migration D — constitution single-sourcing: CLAUDE.md adopted as the single constitution (purely structural; Standing Context was placeholder, nothing to move), PROJECT-INSTRUCTIONS.md converted to a back-compat redirect stub, and the single-source doc ports applied (GETTING-STARTED.md, GETTING-STARTED-GENERIC.md, AUTHORING.md single-source + FORECAST hunks)"
-    ],
-    "skipped_not_applicable_single_result": [
-      "avenues.json", "survey console in index.html", "survey-consistency verifier in verify_numbers.py"
-    ],
-    "deferred_by_author_decision": []
-  },
-  "note": "synced_from_commit marks the reviewed-up-to point for future `git log 8987ffe..HEAD` ranges. Migration D is now fully applied (no longer deferred), matching dossier-uap-propulsion. NOTE: this dossier's CLAUDE.md topic line and Standing context are still PLACEHOLDER — a pre-existing gap to fill when the dossier is developed; D did not address it."
+  "history": [
+    {
+      "range": "8e5cc03..8987ffe",
+      "adopted": [
+        "label vocabulary: FORECAST claim type + clarified OPEN-UNVERIFIED wording",
+        "placeholder-honesty CI (check_placeholders.py + .github/workflows/check-placeholders.yml + DEPLOY.md gate note)",
+        "structural migration D — constitution single-sourcing into CLAUDE.md (PURELY STRUCTURAL; Standing Context was placeholder, nothing to move); PROJECT-INSTRUCTIONS.md -> redirect stub; single-source doc ports (GETTING-STARTED x2, AUTHORING single-source + FORECAST hunks)"
+      ],
+      "skipped_not_applicable_single_result": ["avenues.json", "survey console", "survey verifier"]
+    },
+    {
+      "range": "8987ffe..4d80881",
+      "adopted": [
+        "machinery (docs): strategy-room pointer with explicit cannot-push guardrail — CLAUDE.md operating-mode prose reworded (Standing Context byte-unchanged: placeholder before and after); AUTHORING.md single-source-section pointer expansion (surgical); GETTING-STARTED.md + GETTING-STARTED-GENERIC.md wholesale"
+      ],
+      "skipped_content": ["README.md (template's own README; this dossier's README.md is content, not a sync target)"],
+      "skipped_not_applicable_single_result": ["survey-specific machinery (none in this range)"]
+    }
+  ],
+  "deferred_manual_author_step": [
+    "Update the claude.ai Project -> Instructions box to the new strategy-room pointer (the guarded 'you CANNOT push' text in GETTING-STARTED.md Step C). claude.ai settings, NOT the repo — manual author action. Safe now (Migration D done)."
+  ],
+  "deferred_by_author_decision": [],
+  "note": "synced_from_commit marks the reviewed-up-to point; next sync is `git log 4d80881..HEAD`. Matches dossier-uap-propulsion. NOTE: this dossier's CLAUDE.md topic line and Standing context are still PLACEHOLDER — a pre-existing gap to fill when the dossier is developed; the syncs did not address it."
 }
