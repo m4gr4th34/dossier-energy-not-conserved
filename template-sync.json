@@ -8,15 +8,13 @@
       "label vocabulary: FORECAST claim type + clarified OPEN-UNVERIFIED wording",
       "placeholder-honesty CI (verification/check_placeholders.py + .github/workflows/check-placeholders.yml)",
       "DEPLOY.md release-gate note for the placeholder check",
-      "this changelog file"
+      "this changelog file",
+      "structural migration D — constitution single-sourcing: CLAUDE.md adopted as the single constitution (purely structural; Standing Context was placeholder, nothing to move), PROJECT-INSTRUCTIONS.md converted to a back-compat redirect stub, and the single-source doc ports applied (GETTING-STARTED.md, GETTING-STARTED-GENERIC.md, AUTHORING.md single-source + FORECAST hunks)"
     ],
     "skipped_not_applicable_single_result": [
       "avenues.json", "survey console in index.html", "survey-consistency verifier in verify_numbers.py"
     ],
-    "deferred_by_author_decision": [
-      "D: constitution single-sourcing (PROJECT-INSTRUCTIONS.md -> redirect; Standing Context -> CLAUDE.md) — held to stay structurally matched with dossier-uap-propulsion, pending an external check",
-      "doc ports GETTING-STARTED.md + GETTING-STARTED-GENERIC.md + AUTHORING.md — entangled with the deferred single-sourcing and/or survey shape"
-    ]
+    "deferred_by_author_decision": []
   },
-  "note": "synced_from_commit marks the reviewed-up-to point for future `git log 8987ffe..HEAD` ranges. Deferred items recorded so they are not lost when they fall out of future changelog ranges. Mirrors the dossier-uap-propulsion sync round."
+  "note": "synced_from_commit marks the reviewed-up-to point for future `git log 8987ffe..HEAD` ranges. Migration D is now fully applied (no longer deferred), matching dossier-uap-propulsion. NOTE: this dossier's CLAUDE.md topic line and Standing context are still PLACEHOLDER — a pre-existing gap to fill when the dossier is developed; D did not address it."
 }
