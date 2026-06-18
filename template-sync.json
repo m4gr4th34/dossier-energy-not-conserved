@@ -1,0 +1,22 @@
+{
+  "synced_from_commit": "8987ffe",
+  "synced_at": "2026-06-18",
+  "ritual": "three-bucket (machinery / content / structural migrations), shape-first",
+  "dossier_shape": "single-result",
+  "this_sync": {
+    "adopted": [
+      "label vocabulary: FORECAST claim type + clarified OPEN-UNVERIFIED wording",
+      "placeholder-honesty CI (verification/check_placeholders.py + .github/workflows/check-placeholders.yml)",
+      "DEPLOY.md release-gate note for the placeholder check",
+      "this changelog file"
+    ],
+    "skipped_not_applicable_single_result": [
+      "avenues.json", "survey console in index.html", "survey-consistency verifier in verify_numbers.py"
+    ],
+    "deferred_by_author_decision": [
+      "D: constitution single-sourcing (PROJECT-INSTRUCTIONS.md -> redirect; Standing Context -> CLAUDE.md) — held to stay structurally matched with dossier-uap-propulsion, pending an external check",
+      "doc ports GETTING-STARTED.md + GETTING-STARTED-GENERIC.md + AUTHORING.md — entangled with the deferred single-sourcing and/or survey shape"
+    ]
+  },
+  "note": "synced_from_commit marks the reviewed-up-to point for future `git log 8987ffe..HEAD` ranges. Deferred items recorded so they are not lost when they fall out of future changelog ranges. Mirrors the dossier-uap-propulsion sync round."
+}
